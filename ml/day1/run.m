@@ -16,3 +16,5 @@ X=[ones(m,1),data(:,1)];
 theta=zeros(2,1);
 c=Cost(X,y,theta);
 fprintf('Initial Cost %f \n',c);
+
+theta= gradientDescent(X,y,theta,0.3,10)
